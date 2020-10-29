@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> baiutllah.info</title>
+		<link rel="stylesheet" type="text/css" href="style-bangla.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--link of jQuery file -->
+		<script type="text/javascript" src="../jQuery v3.5.1.js"></script> 
+
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				
+				<!--start of  html for menu -->
+					<div  id="menubar">
+						<button id="menu-button"> menu </button>
+					</div>
+					
+
+				<!--start of  html for main heading -->
+
+					<div id="main-heading-div">
+						
+						<h1 id="main-heading"> BAITULLAH </h1>
+						<p>
+							The first house of worship.
+						</p>
+					</div>
+										 
+					<!--end of  html for main heading -->
+
+					<!--here is three line break only to make some gap before images slideshow  -->
+					<br> <br> <br> <br> <br> <br>
+
+			</header>
+			
+			<!--start of  html div for menu items -->
+			<div id="menu-items">
+				<button id="close-menu">Close  X </button>
+				<menu>
+					
+					<li><a href="../index.html" target="blank"> Home </a></li>
+					<li><a href="../articles/articles_english.html" target="blank"> Articles</a></li>
+					<li><a href="../jakat-calculator/jakat-calculator.html" target="blank"> Jakat Calculator</a></li>
+					<li><a href="../q&a/q&a.html" target="blank"> Questions and Answer</a></li>
+					<li><a href="../about-us/about-us.html" target="blank"> About Us</a></li>
+				</menu>
+			</div>
+
+			<!--here is three line break only to make some gap before images slideshow  -->
+					<br> <br> <br>			
+			
+			<!--start of jqury to show menu items by click on menu button with toggle function-->
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#menu-button").click(function(){
+						$("#menu-items").show();
+					});
+
+					$("#close-menu").click(function(){
+						$("#menu-items").hide();
+					});
+							});
+			</script>
+			
+
+
+			<!--start of  html for file for slide show -->
+
+			<div id="slideshow-example" data-component="slideshow">
+				<div role="list">
+					<div class="slide">
+						<img src="img/kaaba001.jpg" width="60%">
+						<br>
+						<span style="font-size:150%"> 1 </span>. 2. 3. 4 
+					</div>
+					<div class="slide">
+						<img src="img/kaaba002.jpg" width="60%">
+						<br>
+						 1. <span style="font-size:150%"> 2 </span>. 3. 4 
+					</div>
+					<div class="slide">
+						<img src="img/kaaba003.jpg" width="60%">
+						<br>
+						1. 2.  <span style="font-size:150%"> 3 </span> . 4 
+					</div>
+					<div class="slide">
+						<img src="img/kaaba004.jpg" width="60%">
+						<br>
+						1. 2. 3. <span style="font-size:150%"> 4 </span> 
+					</div>				
+					
+				</div>			
+			</div>
+			<!--end of  html for file for slide show -->
+
+
+		</div>
+
+
+       <!-- start of javascript code for slide show -->
+
+			<script type="text/javascript">
+			var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+			slideshows.forEach(initSlideShow);
+
+			function initSlideShow(slideshow) {
+
+			var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+			var index = 0, time = 2000;
+			slides[index].classList.add('active');
+
+			setInterval( () => {
+			slides[index].classList.remove('active');
+			
+			index++;
+			if (index === slides.length) index = 0;
+
+			slides[index].classList.add('active');
+			}, time);
+			}
+			</script>
+		<!-- start of javascript code for slide show -->
+		<br> <br> <br>
+		<h1 style="text-align: center;">বাংলা লিখা</h1>
+		<p id="ayat">
+		Indeed, the first House [of worship] established for mankind was that at Bakkah (another name of Makkah) - blessed and a guidance for the worlds. (Al-e-Imran:96).	
+		</p>
+
+
+
+	</body>
+</html>
