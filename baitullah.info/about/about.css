@@ -1,0 +1,88 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	max-width: 1440px;
+	background-color:  #e6ffcc;
+	line-height: 150%;
+}
+
+/* navigation_style*/
+nav{
+	background-color: #bbff99;
+	padding:  10px 0px;
+	max-width: 1440px;
+	text-align: center;
+}
+nav a{
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	padding: 5px;
+
+}
+
+nav a:hover{
+	text-align: center;
+	text-decoration: none;
+	color: red;
+	background-color:#b3c6ff;
+}
+nav a:visited{
+	text-align: center;
+	text-decoration: none;
+}
+
+/*header style*/
+.header_section{
+	background-color: #ccffe6 ;
+	color: #000;
+	font-weight: bolder;
+	font-size: 120%;
+	font-family:  serif;
+	text-align: left;
+	}
+
+
+
+h3{
+	text-align: center;
+	padding: 10px;
+	color: black;
+
+}
+
+/*article*/
+article{
+	text-align: center;
+	font-size: 120%;
+	line-height: 150%;
+}
+strong{
+	font-size: 120%;
+	font-weight: bolder;
+}
+
+#contact_us{
+	background-color: #cceeff;
+	text-align: center;
+	font-size: 120%;
+}
+
+#contact_us a{
+	text-decoration: none;
+}
+#contact_us a:hover{
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+}
+#contact_us a:visited{
+	text-decoration: none;
+	color: black;
+	background-color: blue;
+}
+
+#back_to_top{
+	text-align: center;
+}
